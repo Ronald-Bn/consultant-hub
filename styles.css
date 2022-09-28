@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Vollkorn:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+}
+
+.home-div {
+    display: flex;
+    padding: 10px 100px 10px 100px;
+    justify-content: space-between;
+}
+
+.nav-div {
+    align-self: center;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav ul {
+    display: inline-block;
+    align-self: center;
+}
+
+.nav li {
+    padding: 20px;
+    display: inline;
+}
+
+.nav li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.6px;
+}
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-logo {
+    width: 200px;
+    height: 200px;
+    object-position: center;
+    object-fit: contain;
+}
+
+h2 {
+    font-family: 'Vollkorn', sans-serif;
+    font-size: 42px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.home-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.home-title h1 {
+    font-size: 62px;
+    font-family: 'Vollkorn', sans-serif;
+}
+
+.home-title p {
+    font-size: 18px;
+    font-family: 'Vollkorn', sans-serif;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.home-title a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-family: 'Vollkorn', sans-serif;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.home-title a:hover {
+    color: #2d3e50;
+    background-color: #fff;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background: #d11242;
+    margin: 0 auto 20px auto;
+}
+
+.line-vertical {
+    width: 2px;
+    height: 400px;
+    background: #d11242;
+    margin: 10px auto 20px auto;
+    max-height: 400px;
+}
+
+.services,
+.about,
+.contact {
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.services-desc {
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.about {
+    background: #f8f9fa;
+}
+
+.paragraph-div {
+    margin-bottom: 50px;
+}
+
+.paragraph-div h4 {
+    font-size: 32px;
+    font-family: 'Vollkorn', sans-serif;
+}
+
+.paragraph-div p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.col {
+    width: 40%;
+}
+
+.map {}
+
+.map p {
+    text-align: end;
+}
+
+.col a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 0;
+
+}
+
+.footer {
+    width: 100%;
+    background-color: #2d3e50;
+    padding: 20px 100px;
+}
+
+.address {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.copyright {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
