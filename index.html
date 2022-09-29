@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/219224259c.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -25,6 +24,8 @@
                                 class="img-logo" /></a>
                     </div>
                     <div class="nav-div">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()"
+                            class="nav-button">&#9776;</span>
                         <nav class="nav">
                             <ul class="menu">
                                 <li><a href="#home">Home</a></li>
@@ -35,21 +36,33 @@
                         </nav>
                     </div>
                 </div>
-
                 <div class="home-title">
-                    <h1>Consultant Hub</h1>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio lacus, faucibus vel varius
-                        at, vulputate a neque. Phasellus fringilla elit dolor, a ullamcorper augue iaculis ac. Vivamus
-                        id ex nisi. Cras eleifend eros ut viverra scelerisque."</p>
-                    <a href="#services" class="button-48">Learn More</a>
+                    <div class="home-title-div">
+                        <h1>Consultant Hub</h1>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio lacus, faucibus vel
+                            varius
+                            at, vulputate a neque. Phasellus fringilla elit dolor, a ullamcorper augue iaculis ac.
+                            Vivamus
+                            id ex nisi. Cras eleifend eros ut viverra scelerisque."</p>
+                        <a href="#services" class="button-48">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#home" class="nav-links" onclick="closeNav()">Home</a>
+                    <a href="#services" class="nav-links" onclick="closeNav()">Our Services</a>
+                    <a href="#about" class="nav-links" onclick="closeNav()">About Us</a>
+                    <a href="#contact" class="nav-links" onclick="closeNav()">Contact Us</a>
                 </div>
             </div>
         </section>
 
         <section class="services" id="services">
             <div class="container-fluid">
-                <h2 class="title-header">OUR SERVICES</h2>
-                <div class="line"></div>
+                <h2 class="title-header fade-right">OUR SERVICES</h2>
+                <div class="line fade-left"></div>
                 <p class="services-desc">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacus arcu, pulvinar sit amet leo
                     at,
@@ -65,10 +78,10 @@
             </div>
         </section>
 
-        <section class="about tag" id="about">
+        <section class="about" id="about">
             <div class="container-fluid">
-                <h2 class="title-header">ABOUT US</h2>
-                <div class="line"></div>
+                <h2 class="title-header fade-right">ABOUT US</h2>
+                <div class="line fade-left"></div>
                 <div class="paragraph-div">
                     <h4>Consulting Hub</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam augue, vulputate sit amet
@@ -98,8 +111,8 @@
 
         <section class="contact" id="contact">
             <div class="container-fluid">
-                <h2 class="title-header">CONTACT US</h2>
-                <div class="line"></div>
+                <h2 class="title-header fade-right">CONTACT US</h2>
+                <div class="line fade-left"></div>
                 <div class="row">
                     <div class="col map">
                         <p>You can walk-in to our office</p>
