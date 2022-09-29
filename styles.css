@@ -46,10 +46,12 @@ body {
 }
 
 .home {
+    width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('background-image.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('background-image-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 700px;
 }
 
 .img-logo {
@@ -76,7 +78,7 @@ h2 {
 }
 
 .home-title h1 {
-    font-size: 62px;
+    font-size: 3.875rem;
     font-family: 'Vollkorn', sans-serif;
 }
 
@@ -99,7 +101,7 @@ h2 {
 }
 
 .home-title a:hover {
-    color: #2d3e50;
+    color: #000;
     background-color: #fff;
 }
 
@@ -151,7 +153,7 @@ h2 {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-around;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -160,8 +162,6 @@ h2 {
 .col {
     width: 40%;
 }
-
-.map {}
 
 .map p {
     text-align: end;
@@ -182,6 +182,7 @@ h2 {
 }
 
 .address {
+    width: 100%;
     color: #fff;
     text-align: center;
     font-size: 14px;
@@ -189,8 +190,125 @@ h2 {
 }
 
 .copyright {
+    width: 100%;
     color: #fff;
     text-align: center;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
+}
+
+.tag {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+    transition: 2s ease;
+}
+
+.tag.fade-in-left {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+@media screen and (max-width:1200px) {
+    .home-div {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .home-div .img-logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .home-title h1 {
+        font-size: 3rem;
+    }
+
+    .paragraph-div h4 {
+        font-size: 1.5rem;
+    }
+
+    .services,
+    .about,
+    .contact {
+        width: 100%;
+        padding: 50px 50px;
+    }
+
+    .footer {
+        width: 100%;
+        background-color: #2d3e50;
+        padding: 10px 20px 10px 20px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .col {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-divider .line-vertical {
+        display: none;
+    }
+
+    .contact-divider {
+        margin: 10px 0;
+    }
+
+    .map p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .services,
+    .about,
+    .contact {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .home-title {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .home-title p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-title h1 {
+        font-size: 2rem;
+    }
+
+    .paragraph-div h4 {
+        font-size: 1.2rem;
+    }
+
+    .paragraph-div p {
+        font-size: 0.75rem;
+    }
+
+    .address,
+    .copyright {
+        font-size: 0.625rem;
+    }
+
+    .col,
+    .contact-divider {
+        font-size: 0.75rem;
+    }
 }
