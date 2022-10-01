@@ -14,7 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="content">
     <main>
         <section id="home" class="home">
             <div class="container-fluid">
@@ -24,8 +24,11 @@
                                 class="img-logo" /></a>
                     </div>
                     <div class="nav-div">
-                        <span style="font-size:30px;cursor:pointer" onclick="openNav()"
-                            class="nav-button">&#9776;</span>
+                        <div id="nav-icon1" onclick="openNav()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                         <nav class="nav">
                             <ul class="menu">
                                 <li><a href="#home">Home</a></li>
@@ -39,7 +42,8 @@
                 <div class="home-title">
                     <div class="home-title-div">
                         <h1>Consultant Hub</h1>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio lacus, faucibus vel
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio lacus, faucibus
+                            vel
                             varius
                             at, vulputate a neque. Phasellus fringilla elit dolor, a ullamcorper augue iaculis ac.
                             Vivamus
@@ -49,12 +53,16 @@
                 </div>
             </div>
             <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div id="nav-icon1" class="closebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="overlay-content">
-                    <a href="#home" class="nav-links" onclick="closeNav()">Home</a>
-                    <a href="#services" class="nav-links" onclick="closeNav()">Our Services</a>
-                    <a href="#about" class="nav-links" onclick="closeNav()">About Us</a>
-                    <a href="#contact" class="nav-links" onclick="closeNav()">Contact Us</a>
+                    <a href="#home" class="nav-links">Home</a>
+                    <a href="#services" class="nav-links">Our Services</a>
+                    <a href="#about" class="nav-links">About Us</a>
+                    <a href="#contact" class="nav-links">Contact Us</a>
                 </div>
             </div>
         </section>
@@ -64,18 +72,51 @@
                 <h2 class="title-header fade-right">OUR SERVICES</h2>
                 <div class="line fade-left"></div>
                 <p class="services-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacus arcu, pulvinar sit amet leo
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacus arcu, pulvinar sit amet
+                    leo
                     at,
                     iaculis fringilla lectus. Quisque egestas convallis elit, eu sollicitudin lorem consectetur at.
-                    Phasellus pellentesque vestibulum mi eu rhoncus. Curabitur tincidunt mi porta placerat vestibulum.
+                    Phasellus pellentesque vestibulum mi eu rhoncus. Curabitur tincidunt mi porta placerat
+                    vestibulum.
                     Morbi
                     id tincidunt erat. Fusce sed pharetra mauris. Cras vitae erat eu ipsum blandit blandit nec
                     scelerisque
                     dolor. Proin in purus eget nunc porttitor molestie.
                 </p>
-                <div class="services-div">
+                <div class="row justify-content-around wrap-reverse">
+                    <div class="col">
+                        <img src="pngwing.com (6).png" alt="" class="services-img first" />
+                        <div class="services-paragraph-div">
+                            <h4>Consultant Hub</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam augue, vulputate
+                                sit
+                                amet
+                                congue in, sodales eget diam. Nunc iaculis sit amet ligula et vulputate. Aenean
+                                imperdiet
+                                quam
+                                in lacus placerat, nec dignissim odio luctus. Duis magna ante, venenatis semper rhoncus
+                                porttitor, feugiat vel metus. Nulla fringilla urna a gravida iaculis. Integer ut rutrum
+                                nibh.
+                                Phasellus placerat tincidunt augue, quis posuere erat luctus sed.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="pngwing.com (7).png" alt="" class="services-img" />
+                        <div class="services-paragraph-div">
+                            <h4>Consultant Hub</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam augue, vulputate
+                                sit
+                                amet
+                                congue in, sodales eget diam. Nunc iaculis sit amet ligula et vulputate. Aenean
+                                imperdiet
+                                quam
+                                in lacus placerat, nec dignissim odio luctus. Duis magna ante, venenatis semper rhoncus
+                                porttitor, feugiat vel metus. Nulla fringilla urna a gravida iaculis. Integer ut rutrum
+                                nibh.
+                                Phasellus placerat tincidunt augue, quis posuere erat luctus sed.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
 
         <section class="about" id="about">
@@ -83,27 +124,36 @@
                 <h2 class="title-header fade-right">ABOUT US</h2>
                 <div class="line fade-left"></div>
                 <div class="paragraph-div">
-                    <h4>Consulting Hub</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam augue, vulputate sit amet
-                        congue in, sodales eget diam. Nunc iaculis sit amet ligula et vulputate. Aenean imperdiet quam
+                    <h4>Consultant Hub</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam augue, vulputate sit
+                        amet
+                        congue in, sodales eget diam. Nunc iaculis sit amet ligula et vulputate. Aenean imperdiet
+                        quam
                         in lacus placerat, nec dignissim odio luctus. Duis magna ante, venenatis semper rhoncus
-                        porttitor, feugiat vel metus. Nulla fringilla urna a gravida iaculis. Integer ut rutrum nibh.
+                        porttitor, feugiat vel metus. Nulla fringilla urna a gravida iaculis. Integer ut rutrum
+                        nibh.
                         Phasellus placerat tincidunt augue, quis posuere erat luctus sed.</p>
                 </div>
                 <div class="paragraph-div">
-                    <h4>Consulting Hub</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam augue, vulputate sit amet
-                        congue in, sodales eget diam. Nunc iaculis sit amet ligula et vulputate. Aenean imperdiet quam
+                    <h4>Consultant Hub</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam augue, vulputate sit
+                        amet
+                        congue in, sodales eget diam. Nunc iaculis sit amet ligula et vulputate. Aenean imperdiet
+                        quam
                         in lacus placerat, nec dignissim odio luctus. Duis magna ante, venenatis semper rhoncus
-                        porttitor, feugiat vel metus. Nulla fringilla urna a gravida iaculis. Integer ut rutrum nibh.
+                        porttitor, feugiat vel metus. Nulla fringilla urna a gravida iaculis. Integer ut rutrum
+                        nibh.
                         Phasellus placerat tincidunt augue, quis posuere erat luctus sed.</p>
                 </div>
                 <div class="paragraph-div">
-                    <h4>Consulting Hub</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam augue, vulputate sit amet
-                        congue in, sodales eget diam. Nunc iaculis sit amet ligula et vulputate. Aenean imperdiet quam
+                    <h4>Consultant Hub</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam augue, vulputate sit
+                        amet
+                        congue in, sodales eget diam. Nunc iaculis sit amet ligula et vulputate. Aenean imperdiet
+                        quam
                         in lacus placerat, nec dignissim odio luctus. Duis magna ante, venenatis semper rhoncus
-                        porttitor, feugiat vel metus. Nulla fringilla urna a gravida iaculis. Integer ut rutrum nibh.
+                        porttitor, feugiat vel metus. Nulla fringilla urna a gravida iaculis. Integer ut rutrum
+                        nibh.
                         Phasellus placerat tincidunt augue, quis posuere erat luctus sed.</p>
                 </div>
             </div>
@@ -113,7 +163,7 @@
             <div class="container-fluid">
                 <h2 class="title-header fade-right">CONTACT US</h2>
                 <div class="line fade-left"></div>
-                <div class="row">
+                <div class="row justify-content-around wrap-reverse">
                     <div class="col map">
                         <p>You can walk-in to our office</p>
                         <iframe
@@ -127,11 +177,11 @@
                     </div>
                     <div class="col contacts">
                         <p>You can contact us via</p>
-                        <a href="sample@">
-                            <img src="google_mail_gmail_logo_icon_159346 (1).png" width="64px;">
+                        <a href="#" class="contact-img">
+                            <img src="google_mail_gmail_logo_icon_159346 (1).png" class="contact-img">
                         </a>
-                        <a href="sample@">
-                            <img src="Facebook_Messenger_icon-icons.com_66796.png" width="64px;" style="padding:15px;">
+                        <a href="#">
+                            <img src="Facebook_Messenger_icon-icons.com_66796.png" class="contact-img fb">
                         </a>
                         <p>you can also call us to </p>
                         <p> <b>+63943-334-324 </b>or <b>1050-240-2219</b></p>
@@ -148,7 +198,6 @@
             <div class="copyright">Copyright © 2022 Consultant Hub Services.</div>
         </div>
     </footer>
-
 
     <script src="index.js"></script>
 </body>
