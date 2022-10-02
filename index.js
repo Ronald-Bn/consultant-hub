@@ -1,6 +1,5 @@
 $(window).on('load', function () {
     $(".content").fadeIn(1000);
-
 });
 
 $(document).on("scroll", function () {
@@ -36,27 +35,21 @@ $(document).on("scroll", function () {
 });
 
 $(document).ready(function () {
-    $(".nav-links").click(function () {
-        $("#myNav").css('width', '0%');
-    });
-
-    $(".closebtn").click(function () {
-        $("#myNav").css('width', '0%');
-    });
-});
-
-
-$(document).ready(function () {
-    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4,#nav-icon5').click(function () {
+    $('#hamburger-icon').click(function () {
         $(this).toggleClass('open');
         $('.closebtn').addClass('open');
     });
 
-    $('.closebtn').click(function () {
-        $('#nav-icon1').removeClass('open');
+    $(".nav-links").click(function () {
+        $("#myNav").css('width', '0%');
+        console.log('clicked');
+        $('#hamburger-icon').removeClass('open');
     });
 
-
+    $(".closebtn").click(function () {
+        $("#myNav").css('width', '0%');
+        $('#hamburger-icon').removeClass('open');
+    });
 });
 
 function openNav() {
