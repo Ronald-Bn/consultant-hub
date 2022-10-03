@@ -34,30 +34,30 @@ $(document).on("scroll", function () {
     }
 });
 
+
 $(document).ready(function () {
     $('#hamburger-icon').click(function () {
         $(this).toggleClass('open');
         $('.closebtn').addClass('open');
+        $('body').css('overflow', 'hidden');
     });
 
     $(".nav-links").click(function () {
         $("#myNav").css('width', '0%');
-        console.log('clicked');
         $('#hamburger-icon').removeClass('open');
+        $('body').css('overflow', 'visible');
     });
 
     $(".closebtn").click(function () {
         $("#myNav").css('width', '0%');
         $('#hamburger-icon').removeClass('open');
+        $('body').css('overflow', 'visible');
     });
 });
+
 
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
 }
 
-// function closeNav() {
-//     document.getElementById("myNav").style.width = "0%";
-//     console.log('clicked');
-// }
 
