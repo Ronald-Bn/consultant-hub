@@ -11,4 +11,4 @@ Business Website Template for Feasibility Study.
 
 
 
-PS. This is for my friend and I made it because I love to code ❤ 
+PS. This is for my friend and I made it because I love to code. ❤ 
