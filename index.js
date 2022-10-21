@@ -1,5 +1,5 @@
 $(window).on('load', function () {
-    $(".content").fadeIn(1000);
+    $(".content").show();
 });
 
 $(document).on("scroll", function () {
